@@ -7,20 +7,20 @@
         public Class1()
         {
             // var foo = Common.IsDBNull(89);
-            var foo = Numbers.IsNumber(45);
+            var foo = Number.IsNumber(45);
         }
 
         [Fact]
         public void IsNumberWorking()
         {
-            var foo = Numbers.IsNumber("Hello World");
+            var foo = Number.IsNumber("Hello World");
 
 
-            Assert.Equal(true, Numbers.IsNumber(45));
-            Assert.Equal(true, Numbers.IsNumber(45.89));
-            Assert.Equal(true, Numbers.IsNumber(00.89));
-            Assert.Equal(true, Numbers.IsNumber(-90));
-            Assert.Equal(false, Numbers.IsNumber("Hello World"));
+            Assert.Equal(true, Number.IsNumber(45));
+            Assert.Equal(true, Number.IsNumber(45.89));
+            Assert.Equal(true, Number.IsNumber(00.89));
+            Assert.Equal(true, Number.IsNumber(-90));
+            Assert.Equal(false, Number.IsNumber("Hello World"));
         }
     }
 }

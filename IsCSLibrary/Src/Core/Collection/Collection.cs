@@ -12,7 +12,7 @@
         #region Public Methods
         public static bool IsEven<T>(IEnumerable<T> collection, Mode mode = Mode.All)
         {
-            //collection.all
+            return true;
         }
 
         public static bool IsOdd(object value)
